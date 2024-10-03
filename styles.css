@@ -156,6 +156,7 @@ hr {
 
   .texto-galeria {
     height: 210px;
+    font-size: 0.7rem;
   }
   .gallery-image {
     height: 210px;
@@ -175,7 +176,7 @@ hr {
     height: 210px;
   }
   .texto-galeria {
-    height: 190px;
+    height: 210px;
   }
 
   .gallery-image:hover {
@@ -188,7 +189,8 @@ hr {
     height: 290px;
   }
   .texto-galeria {
-    height: 270px;
+    height: 290px;
+    font-size: 0.9rem;
   }
 
   .gallery-image:hover {
@@ -208,51 +210,45 @@ hr {
     height: 384px;
   }
   .texto-galeria {
-    height: 364px;
+    height: 384px;
+    font-size: 1rem;
   }
 }
 
 .texto-galeria {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 5%;
-    background-color: #f5f5f5;
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    outline: 2px solid rgb(255, 255, 255);
-    outline-offset: -8px;
-    transition: all 0.2s ease-in-out;
-  
-    /* Añadir scroll cuando hay mucho contenido */
-    overflow-y: auto; /* Permite scroll vertical */
-    max-height: 100%; /* Asegura que el contenedor no se desborde */
-  }
-  
-  .texto-galeria::-webkit-scrollbar {
-    width: 6px; /* Ajustar el grosor del scroll */
-  }
-  
-  .texto-galeria::-webkit-scrollbar-track {
-    background: #2d0a0a; /* Color del fondo del scroll */
-  }
-  
-  .texto-galeria::-webkit-scrollbar-thumb {
-    background-color: #aaa; /* Color del scroll */
-    border-radius: 10px; /* Borde redondeado */
-    border: 2px solid #b81a1a; /* Espacio entre el scroll y el borde */
-  }
-  
-  .texto-galeria h2 {
-    font-size: 1.2rem;
-    color: #333;
-  }
-  
-  .texto-galeria p {
-    font-size: 0.9rem;
-    color: #555;
-    margin: 0;
+  width: 100%;
+  outline: 2px solid rgb(255, 255, 255);
+  outline-offset: -8px;
+  border-radius: 3px;
+  background: rgb(0, 0, 0);
+  background: #231f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  color: rgb(240, 240, 240);
+}
+
+.texto-galeria p {
+  padding: 0 1rem 1rem 1rem;
+}
+.intermedio {
+  height: 80%;
+}
+.texto-galeria::-webkit-scrollbar {
+  width: 8px; /* Ancho del scroll */
+}
+
+.texto-galeria::-webkit-scrollbar-thumb {
+  background-color: #ffa500; /* Color del scroll */
+  border-radius: 10px; /* Redondeo del scroll */
+}
+
+.texto-galeria::-webkit-scrollbar-track {
+  background-color: #333; /* Color de fondo del track */
+  border-radius: 10px;
+}
+
+.texto-galeria::-webkit-scrollbar-thumb:hover {
+  background-color: #ff7300; /* Color del scroll al pasar el mouse */
 }
