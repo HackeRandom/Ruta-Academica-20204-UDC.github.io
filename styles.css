@@ -175,6 +175,7 @@ hr {
   .gallery-image {
     height: 210px;
   }
+
   .texto-galeria {
     height: 210px;
   }
@@ -182,6 +183,7 @@ hr {
   .gallery-image:hover {
     height: 214px;
   }
+  
 }
 
 @media (min-width: 470px) {
@@ -253,6 +255,7 @@ hr {
   background-color: #ff7300; /* Color del scroll al pasar el mouse */
 }
 
+
 .video-container {
   position: relative;
   width: 100%;
@@ -273,4 +276,3 @@ hr {
   outline-offset: -8px;
   border-radius: 3px ;
 }
-
